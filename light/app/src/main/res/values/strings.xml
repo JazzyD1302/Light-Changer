@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">light</string>
+    <string name="hello_evan">Hello Evan</string>
+    <string name="hello_dante">Hello Dante</string>
 </resources>
