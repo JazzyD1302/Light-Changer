@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -17,20 +15,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        final TextView main = findViewById(R.id.Main);
+        final TextView colour = findViewById(R.id.Color);
 
-        final Button dante = findViewById(R.id.dante);
-        dante.setOnClickListener(new View.OnClickListener() {
+        final Button red = findViewById(R.id.Red);
+        red.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                main.setText("Hello Dante");
+                colour.setBackgroundResource(R.color.Red);
             }
         });
 
-        final Button evan = findViewById(R.id.evan);
-        evan.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                main.setText("Hello Evan");
-            }
-        });
     }
 }
