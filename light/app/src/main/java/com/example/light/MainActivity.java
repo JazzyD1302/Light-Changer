@@ -24,5 +24,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        final Button blue = findViewById(R.id.Blue);
+        blue.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                colour.setBackgroundResource(R.color.Blue);
+            }
+        });
+
+        final Button green = findViewById(R.id.Green);
+        green.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                colour.setBackgroundResource(R.color.Green);
+            }
+        });
+
     }
 }
