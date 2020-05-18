@@ -21,9 +21,9 @@ public class Bluetooth {
     }
 
     public static void main(String[] args){
-        if(!adapter.isEnabled()){
-            System.out.println("Please enble bluetooth");
-        }else{
+//        if(!adapter.isEnabled()){
+//            System.out.println("Please enble bluetooth");
+//        }else{
         Set<BluetoothDevice> pairedDevices = adapter.getBondedDevices();
 
 // If there’s 1 or more paired devices...//
@@ -35,7 +35,7 @@ public class Bluetooth {
                 //ListView
                 ArrayList<String> mArrayAdapter = null;
                 mArrayAdapter.add(device.getName() + "\n" + device.getAddress());
-                }
+//                }
             }
         }
     }
