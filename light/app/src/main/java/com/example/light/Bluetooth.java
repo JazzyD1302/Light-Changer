@@ -21,9 +21,6 @@ public class Bluetooth {
     }
 
     public static void main(String[] args){
-
-
-
         if(!adapter.isEnabled()){
             System.out.println("Please enble bluetooth");
         }else{
@@ -65,14 +62,15 @@ public class Bluetooth {
     }
 
     ;
-    private InputStream in;
-    private OutputStream out;
+    public InputStream in;
+    public static OutputStream out;
 
     public static void send(int color) throws IOException {
 
-        InputStream tempIn = color;
+        InputStream tempIn = null;
         OutputStream tempOut = null;
-//        try {
+        out.write(color);
+       //        try {
 //            tempIn = bluesocket.getInputStream();
 //            tempOut = bluesocket.getOutputStream();
 //        } catch (IOException e) {

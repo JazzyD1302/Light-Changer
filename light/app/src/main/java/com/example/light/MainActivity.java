@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Bluetooth.createUUID();
-//        Bluetooth.main(null);
+        Bluetooth.main(null);
 
         final TextView colour = findViewById(R.id.Color);
 
